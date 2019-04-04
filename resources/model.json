@@ -1,0 +1,160 @@
+[
+  {
+    "cityId": 123,
+    "cityName": "Sevilla",
+    "country": "Spain",
+    "cameras": [
+      {
+        "cameraId": 1487,
+        "cameraName": "Caha Observatory 1",
+        "supportChannels": [
+          {
+            "channelId": 13817,
+            "type": "email",
+            "recipient": "support1@caha-fake.com",
+            "enabled": true,
+            "verified": true
+          },
+          {
+            "channelId": 13818,
+            "type": "phone",
+            "recipient": "+3488887777",
+            "enabled": false,
+            "verified": true
+          }
+        ]
+      },
+      {
+        "cameraId": 1488,
+        "cameraName": "Caha Observatory 2",
+        "supportChannels": [
+          {
+            "channelId": 13817,
+            "type": "email",
+            "recipient": "support2@caha-fake.com",
+            "enabled": true,
+            "verified": true
+          },
+          {
+            "channelId": 13818,
+            "type": "phone",
+            "recipient": "+3488887777",
+            "enabled": false,
+            "verified": true
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "type": "routine",
+        "start": 1516528800000,
+        "end": 1517079600000
+      },
+      {
+        "type": "camera-upgrade",
+        "start": 1518602400000,
+        "end": 1518807600000
+      }
+    ],
+    "stats": [
+      {
+        "date": "2019-04-01",
+        "newFavorites": 37,
+        "clicks": 198,
+        "secondsWatched": 3918
+      },
+      {
+        "date": "2019-04-02",
+        "newFavorites": 31,
+        "clicks": 156,
+        "secondsWatched": 2888
+      },
+      {
+        "date": "2019-04-04",
+        "newFavorites": 35,
+        "clicks": 222,
+        "secondsWatched": 3577
+      }
+    ]
+  },
+  {
+    "cityId": 124,
+    "cityName": "Bad Leonfelden",
+    "country": "Austria",
+    "cameras": [
+      {
+        "cameraId": 386,
+        "cameraName": "Sternstein Ski Lift 1",
+        "supportChannels": [
+          {
+            "channelId": 14997,
+            "type": "email",
+            "recipient": "support1@sternstein.com",
+            "enabled": true,
+            "verified": true
+          },
+          {
+            "channelId": 13818,
+            "type": "phone",
+            "recipient": "+3488887777",
+            "enabled": false,
+            "verified": true
+          }
+        ]
+      },
+      {
+        "cameraId": 387,
+        "cameraName": "Sternstein Ski Lift Backup",
+        "supportChannels": [
+          {
+            "channelId": 14998,
+            "type": "email",
+            "recipient": "support2@sternstein.com",
+            "enabled": false,
+            "verified": false
+          },
+          {
+            "channelId": 13818,
+            "type": "phone",
+            "recipient": "+4311112222",
+            "enabled": true,
+            "verified": false
+          }
+        ]
+      }
+    ],
+    "maintenance": [
+      {
+        "type": "routine",
+        "start": 1516528800000,
+        "end": 1517079600000
+      },
+      {
+        "type": "camera-upgrade",
+        "start": 1518602400000,
+        "end": 1518807600000
+      }
+    ],
+    "stats": [
+      {
+        "date": "2019-04-01",
+        "newFavorites": 37,
+        "clicks": 198,
+        "secondsWatched": 3918
+      },
+      {
+        "date": "2019-04-02",
+        "newFavorites": 31,
+        "clicks": 156,
+        "secondsWatched": 2888
+      },
+      {
+        "date": "2019-04-04",
+        "newFavorites": 35,
+        "clicks": 222,
+        "secondsWatched": 3577
+      }
+    ]
+  }
+]
