@@ -1,4 +1,4 @@
-#OWLR Front End Test
+# OWLR Front End Test
 
 Hello, and welcome to the OWLR Front-End technical test.
 
@@ -90,7 +90,7 @@ The data you will get from the backend comes in JSON format and every global cam
   }
 ```
 
-##We track:
+## We track:
  
  1. All the cameras that belong to the location
  2. All the support channels we can use to contact them
@@ -100,7 +100,7 @@ The data you will get from the backend comes in JSON format and every global cam
  The endpoint will return an **array** of these locations, and the webpage should be able to display them all 
  
  ---
-##Evaluation
+## Evaluation
 
 Your work will be evaluated in: 
 
@@ -110,7 +110,7 @@ Your work will be evaluated in:
 But don't worry, you will have a lot of feedback from us. 
 
 ----
-##Data
+## Data
 To get the data you can either use the static json file at `/resources/model.json` on this repo. Or if you want to simulate a server this repo is also ready for that. Here are the steps.
 
 1. [Download and install NodeJS](https://nodejs.org/en/download/)
