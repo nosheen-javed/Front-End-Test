@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/weave.css" />
+    <script src="/jquery/jquery.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+  <script src="../chartjs/Chart.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="/bootstrap/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/bootstrap/css/bootstrap-grid.css"
+    />
+    <title>Location Detail</title>
+  
+     
+  </head>
+
+  <body>
+    <div class="wrapper container-fluid">
+      <header class="grid">
+        <div class="col-md-2 branding">
+          <img src="../images/logo.png" alt="OWLR" />
+        </div>
+        <div class="col-md-1 menu" id="sidemenuCollapse"></div>
+        <div class="col-md-1 mobile-menu">
+          <span class="user-menu" id="sidemobile-menuCollapse">
+            <i class="weave-menu"></i
+          ></span>
+          <li class="user-profile">
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle user-branding"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="weave-user"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">
+                  <i class="weave-user"></i> View Profile
+                </button>
+                <button class="dropdown-item" type="button">
+                  <i class="weave-line-axis"></i> Dashboard
+                </button>
+                <button class="dropdown-item" type="button">
+                  <i class="weave-company"></i>Company Name
+                </button>
+
+                <button class="dropdown-submenu">
+                  <i class="weave-multiuser"></i> User Roles
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" tabindex="-1" href="#"
+                        >level 2</a
+                      >
+                    </li>
+                  </ul>
+                </button>
+
+                <button class="dropdown-item" type="button">
+                  <i class="weave-setting"></i> Settings
+                </button>
+                <button class="dropdown-item" type="button">
+                  <i class="weave-support"></i> Support
+                </button>
+              </div>
+            </div>
+          </li>
+        </div>
+        <nav class="col-md-9">
+          <li><i class="weave-star"></i></li>
+          <li>
+            <i class="weave-chat"></i> <span class="badge badge-light">4</span>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle user-branding"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="user-img">JD</span>
+                <span class="username">John Doe</span>
+              </button>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" type="button">
+                  <i class="weave-user"></i> View Profile
+                </button>
+                <button class="dropdown-item" type="button">
+                  <i class="weave-line-axis"></i> Dashboard
+                </button>
+                <button class="dropdown-item" type="button">
+                  <i class="weave-company"></i>Company Name
+                </button>
+
+                <button class="dropdown-submenu">
+                  <i class="weave-multiuser"></i> User Roles
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" tabindex="-1" href="#"
+                        >level 2</a
+                      >
+                    </li>
+                  </ul>
+                </button>
+
+                <button class="dropdown-item" type="button">
+                  <i class="weave-setting"></i> Settings
+                </button>
+                <button class="dropdown-item" type="button">
+                  <i class="weave-support"></i> Support
+                </button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <i class="weave-notification"></i>
+            <span class="badge badge-light">4</span>
+          </li>
+          <li><i class="weave-sign-out"></i></li>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="sidecontent">
+          <div class="topbar row">
+            <nav aria-label="breadcrumb" class="col-md-3">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                 <li class="breadcrumb-item"><a href="/">Camera Locations</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Detail
+                </li>
+              </ol>
+            </nav>
+          </div>
+
+          <div class="form-content zero-padding">
+            <div class="row">
+              <div class="col-md-5 ">
+                <div class="col-md-12 gadget-box zero-padding">
+                  <div class="gadget-header"></div>
+                  <div class="gadget-body">
+                    <div class="col-md-12 zero-padding">
+                      <div class="row country data">
+                        <div class="col-md-10">
+                          <h4 for="exampleInputEmail1">
+                           <%=object.country %>
+                          
+                          </h4>
+                        </div>
+                        <div class="col-md-2">
+                          <i class="weave-search search-icon"></i>
+                        </div>
+                      </div>
+                      <div class="row city data">
+                        <div class="col-md-10">
+                          <p> <%=object.cityName %></p>
+                        </div>
+                        <div class="col-md-2">
+                          <i class="weave-search search-icon"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12 zero-padding">
+                      <h5 class="program-major">
+                        Last Maintenance Performed:
+                      </h5>
+
+                      <h5 class="dates">
+                        <span id="start-date"
+                          ><i class="weave-event"></i> <%= object.maintenance[0].start%></span
+                        >
+                        <span id="end-date">
+                          - <%= object.maintenance[0].end%>
+                        </span>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="col-md-12 gadget-box zero-padding">
+                  <div class="gadget-header">
+                    <h4>Cameras</h4>
+                  </div>
+                  <div class="gadget-body">
+                    <div class="camera-list">
+                      <ul class="items">
+                        <% object.cameras.forEach(function(item) { %>
+                         <li>
+                          <h5> <%=item.cameraName %></h5>
+
+                          <p class="support-channels">
+                           <% item.supportChannels.forEach(function(supportchannel) { %>
+                             
+                            <% if(supportchannel.type == "email"){ %>
+                              <i class="weave-envelope" title="<%=supportchannel.recipient %>"></i>
+                             <%}else{%>
+                          <i class="weave-phone" title="<%=supportchannel.recipient %>"></i>
+                          <%}%>
+                           <%})%>
+                          
+                          </p>
+                        </li>
+
+                    <% }); %>
+
+                     
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+
+            <div class="col-md-5 ">
+              <div class="gadget-box zero-padding">
+                 <div class="gadget-header">
+                <h4>Stats</h4>
+              </div>
+              <div class="gadget-body">
+               <canvas id="myChart" width="400"></canvas>
+              </div>
+              </div>
+             
+            </div>
+
+            <div class="col-md-7">
+               <div class="gadget-box zero-padding">
+
+             <div class="table-content col-md-12">
+              <div class="grid-header col-md-12">
+                <div class="row">
+                  <div class="col-md-8 grid-heading">
+                    <h3>Maintenance</h3>
+                  </div>
+                  <div class="col-md-4 grid-icon">
+                    <ul>
+                      <li>
+                       
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <table class="table" id="grid">
+                <thead>
+                 <th>Type</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </thead>
+                <tbody>
+            
+                 <% object.maintenance.forEach(function(maintenance) { %>
+
+                    <tr>
+                      <td><%= maintenance.type %></td>
+                      <td><%= maintenance.start %></td>
+                      <td><%= maintenance.end %></td>
+               
+                    </tr>
+                  
+                   <%});%>
+
+                
+                 
+               
+                </tbody>
+              </table>
+             
+            </div>
+            </div>
+            </div>
+        </div>
+
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  <script>
+var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+  labels: ['2019-04-01' ,'2019-04-02 '],
+  datasets: [
+  {
+    label: 'newFavorites',
+    data: [37 , 35],
+    backgroundColor: '#D6E9C6' // green
+  },
+  {
+    label: 'clicks',
+    data: [198 , 222],
+    backgroundColor: '#FAEBCC' // yellow
+  },
+  {
+    label: 'secondsWatched:',
+    data: [3918 , 3577],
+    backgroundColor: '#EBCCD1' // red
+  }
+]
+},
+    options: {
+        scales: {
+            xAxes: [{ stacked: true }],
+            yAxes: [{
+               stacked: true,
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        },
+        tooltips: {
+   mode: 'label',
+   callbacks: {
+      label: function(t, d) {
+         var dstLabel = d.datasets[t.datasetIndex].label;
+         var yLabel = t.yLabel;
+         return dstLabel + ': ' + yLabel ;
+      }
+   }
+}
+    },
+    
+});
+</script>
+</html>

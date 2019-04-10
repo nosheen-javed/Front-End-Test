@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "weave";
+  src: url("../fonts/weave.ttf?a70fhx") format("truetype"),
+    url("../fonts/weave.woff?a70fhx") format("woff"),
+    url("../fonts/weave.svg?a70fhx#weave") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="weave-"],
+[class*=" weave-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "weave" !important;
+
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.weave-unchecked:before {
+  content: "\e959";
+}
+.weave-checked:before {
+  content: "\e95a";
+}
+.weave-information:before {
+  content: "\e957";
+}
+.weave-error:before {
+  content: "\e958";
+}
+.weave-assignTranscriptionLibrary:before {
+  content: "\e948";
+}
+.weave-resetTranscriptionLibrary:before {
+  content: "\e949";
+}
+.weave-transcriptionLibrary:before {
+  content: "\e94a";
+}
+.weave-student:before {
+  content: "\e94b";
+}
+.weave-teacher:before {
+  content: "\e94c";
+}
+.weave-image:before {
+  content: "\e94d";
+}
+.weave-pptx:before {
+  content: "\e94e";
+}
+.weave-txt:before {
+  content: "\e94f";
+}
+.weave-url:before {
+  content: "\e950";
+}
+.weave-xlsx:before {
+  content: "\e951";
+}
+.weave-docx:before {
+  content: "\e952";
+}
+.weave-pdf:before {
+  content: "\e953";
+}
+.weave-mp4:before {
+  content: "\e954";
+}
+.weave-mp3:before {
+  content: "\e955";
+}
+.weave-awarding_body:before {
+  content: "\e956";
+}
+.weave-add_attendancesheet:before {
+  content: "\e945";
+}
+.weave-attendance:before {
+  content: "\e946";
+}
+.weave-certificate:before {
+  content: "\e947";
+}
+.weave-view:before {
+  content: "\e944";
+}
+.weave-form_builder:before {
+  content: "\e900";
+}
+.weave-calendar:before {
+  content: "\e901";
+}
+.weave-advance_search:before {
+  content: "\e902";
+}
+.weave-activate:before {
+  content: "\e903";
+}
+.weave-deactivate:before {
+  content: "\e904";
+}
+.weave-refresh:before {
+  content: "\e905";
+}
+.weave-assessment:before {
+  content: "\e906";
+}
+.weave-assessment_result:before {
+  content: "\e907";
+}
+.weave-contract:before {
+  content: "\e908";
+}
+.weave-copy:before {
+  content: "\e909";
+}
+.weave-delete_form:before {
+  content: "\e90a";
+}
+.weave-edit_form:before {
+  content: "\e90b";
+}
+.weave-form:before {
+  content: "\e90c";
+}
+.weave-form_search:before {
+  content: "\e90d";
+}
+.weave-new:before {
+  content: "\e90e";
+}
+.weave-Questionnare:before {
+  content: "\e90f";
+}
+.weave-test:before {
+  content: "\e910";
+}
+.weave-add:before {
+  content: "\e911";
+}
+.weave-add_form:before {
+  content: "\e912";
+}
+.weave-adduser:before {
+  content: "\e913";
+}
+.weave-arrow-down:before {
+  content: "\e914";
+}
+.weave-back:before {
+  content: "\e915";
+}
+.weave-chat:before {
+  content: "\e916";
+}
+.weave-company:before {
+  content: "\e917";
+}
+.weave-down:before {
+  content: "\e918";
+}
+.weave-download:before {
+  content: "\e919";
+}
+.weave-dustbin:before {
+  content: "\e91a";
+}
+.weave-edit:before {
+  content: "\e91b";
+}
+.weave-envelope:before {
+  content: "\e91c";
+}
+.weave-event:before {
+  content: "\e91d";
+}
+.weave-form1:before {
+  content: "\e91e";
+}
+.weave-history:before {
+  content: "\e91f";
+}
+.weave-line_bullets:before {
+  content: "\e920";
+}
+.weave-line-axis:before {
+  content: "\e921";
+}
+.weave-location:before {
+  content: "\e922";
+}
+.weave-lock:before {
+  content: "\e923";
+}
+.weave-menu:before {
+  content: "\e924";
+}
+.weave-mic:before {
+  content: "\e925";
+}
+.weave-multiupload:before {
+  content: "\e926";
+}
+.weave-multiuser:before {
+  content: "\e927";
+}
+.weave-next:before {
+  content: "\e928";
+}
+.weave-notification:before {
+  content: "\e929";
+}
+.weave-pause:before {
+  content: "\e92a";
+}
+.weave-phone:before {
+  content: "\e92b";
+}
+.weave-play:before {
+  content: "\e92c";
+}
+.weave-previous:before {
+  content: "\e92d";
+}
+.weave-remove:before {
+  content: "\e92e";
+}
+.weave-removeuser:before {
+  content: "\e92f";
+}
+.weave-round_bulletpoints:before {
+  content: "\e930";
+}
+.weave-save:before {
+  content: "\e931";
+}
+.weave-search:before {
+  content: "\e932";
+}
+.weave-select:before {
+  content: "\e933";
+}
+.weave-setting:before {
+  content: "\e934";
+}
+.weave-sign-out:before {
+  content: "\e935";
+}
+.weave-sort-arrow-down:before {
+  content: "\e936";
+}
+.weave-sort-arrow-up:before {
+  content: "\e937";
+}
+.weave-star:before {
+  content: "\e938";
+}
+.weave-start:before {
+  content: "\e939";
+}
+.weave-stop:before {
+  content: "\e93a";
+}
+.weave-studenthistory:before {
+  content: "\e93b";
+}
+.weave-support:before {
+  content: "\e93c";
+}
+.weave-transcription:before {
+  content: "\e93d";
+}
+.weave-up:before {
+  content: "\e93e";
+}
+.weave-upload:before {
+  content: "\e93f";
+}
+.weave-user:before {
+  content: "\e940";
+}
+.weave-userid:before {
+  content: "\e941";
+}
+.weave-userid-new:before {
+  content: "\e942";
+}
+.weave-userlist:before {
+  content: "\e943";
+}

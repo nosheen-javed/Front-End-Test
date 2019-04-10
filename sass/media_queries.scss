@@ -1,0 +1,543 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .wrapper {
+    header {
+      padding: 0.8em 0.4em;
+      nav {
+        display: none !important;
+      }
+      .menu {
+        display: none;
+      }
+      .mobile-menu {
+        display: flex;
+        font-size: 22px;
+        text-align: right;
+        cursor: pointer;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        @include zero-padding();
+        li.user-profile {
+          width: 50px;
+          height: 50px;
+          background: darken($primary-color, 8%);
+          border-radius: 50%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          .dropdown-toggle {
+            background-color: transparent;
+            border: none;
+            color: $secondary-color;
+            &:after {
+              content: "";
+              border: none;
+            }
+            i {
+              margin: 0px 5px;
+            }
+          }
+          .dropdown-item {
+            color: $text-color;
+            font-family: "Lato-Regular";
+            font-size: 14px;
+            padding: 0.5rem 1.5rem;
+            display: block;
+
+            i {
+              color: $text-color;
+              font-size: 16px;
+              vertical-align: text-bottom;
+              cursor: pointer;
+              margin-right: 10px;
+            }
+            &:hover {
+              background-color: $primary-color;
+              color: $secondary-color;
+              i {
+                color: $secondary-color;
+              }
+            }
+            &:active {
+              color: $secondary-color;
+              text-decoration: none;
+              background-color: $primary-color;
+              i {
+                color: $secondary-color;
+              }
+            }
+          }
+          .dropdown-submenu {
+            color: $text-color;
+            font-family: "Lato-Regular";
+            font-size: 14px;
+            display: block;
+            width: 100%;
+            padding: 0.5rem 1.5rem;
+            clear: both;
+            font-weight: 400;
+            text-align: inherit;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+            position: relative;
+            i {
+              color: $text-color;
+              font-size: 16px;
+              vertical-align: text-bottom;
+              cursor: pointer;
+              margin-right: 10px;
+            }
+            .dropdown-menu {
+              display: block;
+              padding: 0px !important;
+              border: none;
+              width: 100%;
+              padding-left: 30px !important;
+              li {
+                display: block;
+              }
+            }
+            &:hover {
+              background-color: $primary-color;
+              color: $secondary-color;
+              i {
+                color: $secondary-color;
+              }
+            }
+            &:active {
+              color: $secondary-color;
+              text-decoration: none;
+              background-color: $primary-color;
+              i {
+                color: $secondary-color;
+              }
+            }
+
+            &:after {
+              content: "\e90d";
+              font-family: "weave";
+              position: absolute;
+              right: 10px;
+            }
+          }
+        }
+
+        i {
+          color: $secondary-color;
+          margin: 0px 10px;
+        }
+      }
+    }
+    .content {
+      .sidemenu {
+        z-index: 2;
+        height: 100%;
+        transition: none;
+        right: 0;
+        display: none;
+      }
+    }
+    .search-panel {
+      padding: 0px;
+      display: flex;
+      margin: 0px;
+      flex-direction: column-reverse;
+      margin: 10px 0px;
+      .search-tags {
+        margin: 10px 0px;
+        @include zero-padding();
+      }
+    }
+    .client-branding-mobile {
+      display: block;
+      margin-bottom: 25px;
+      @include c-align();
+      img {
+        width: 80%;
+      }
+    }
+    .login-section {
+      width: 90%;
+      .login-box {
+        padding: 1rem;
+        .clientlogo-section {
+          display: none;
+        }
+        .form-section {
+          .login-fields {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .product-signature-mobile {
+      display: none;
+      margin: 10px 0px;
+      padding: 10px 0px !important;
+      @include c-align();
+      img {
+        width: 50%;
+      }
+      h5 {
+        font-family: "Lato-Bold" !important;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin: 10px 0px !important;
+      }
+      h6 {
+        margin-top: 0px !important;
+        font-size: 0.4rem;
+        font-family: "Lato-Bold" !important;
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+      }
+      p {
+        @include c-align();
+        font-size: 0.4rem;
+        font-family: "Lato-Bold";
+        margin-bottom: 5px;
+      }
+      .copyright {
+        text-transform: uppercase;
+      }
+    }
+    .product-signature {
+      position: relative !important;
+      top: 20px;
+      width: 100%;
+      right: 0px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  .sidecontent {
+    .table-content {
+      .grid-header {
+        width: 100%;
+        .grid-heading {
+          width: 70%;
+        }
+        .grid-icon {
+          width: 30%;
+        }
+      }
+      #grid_wrapper {
+        overflow-x: auto;
+      }
+      .table {
+        margin-bottom: 10px !important;
+      }
+      .rowcount-info {
+        width: 60%;
+        .rowcount {
+          text-align: left;
+        }
+      }
+      .totalrecord-info {
+        width: 40%;
+      }
+      .pagination-info {
+        margin-top: 10px;
+        .pagination {
+          justify-content: center;
+          i {
+            margin-right: 20px;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .wrapper {
+    header {
+      padding: 0.8em 0.4em;
+      nav {
+        display: none !important;
+      }
+      .menu {
+        display: none;
+      }
+      .mobile-menu {
+        display: flex;
+        font-size: 22px;
+        text-align: right;
+        cursor: pointer;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        @include zero-padding();
+        li.user-profile {
+          width: 50px;
+          height: 50px;
+          background-color: #3b2649;
+          border-radius: 50%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          .dropdown-toggle {
+            background-color: transparent;
+            border: none;
+            &:after {
+              content: "";
+              border: none;
+            }
+            i {
+              margin: 0px 5px;
+            }
+          }
+        }
+        .dropdown-item {
+          i {
+            color: #282828;
+          }
+        }
+        i {
+          color: $secondary-color;
+          margin: 0px 10px;
+        }
+      }
+    }
+    .content {
+      .sidemenu {
+        z-index: 2;
+        height: 100%;
+        transition: none;
+        right: 0;
+        display: none;
+      }
+    }
+    .search-panel {
+      padding: 0px;
+      display: flex;
+      margin: 0px;
+      flex-direction: column-reverse;
+      margin: 10px 0px;
+      .search-tags {
+        margin: 10px 0px;
+        @include zero-padding();
+      }
+    }
+    .client-branding-mobile {
+      display: block;
+      margin-bottom: 25px;
+      @include c-align();
+      img {
+        width: 80%;
+      }
+    }
+    .login-section {
+      width: 90%;
+      .login-box {
+        padding: 1rem;
+        .clientlogo-section {
+          display: none;
+        }
+        .form-section {
+          .login-fields {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .product-signature-mobile {
+      display: none;
+      margin: 10px 0px;
+      padding: 10px 0px !important;
+      @include c-align();
+      img {
+        width: 50%;
+      }
+      h5 {
+        font-family: "Lato-Bold" !important;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin: 10px 0px !important;
+      }
+      h6 {
+        margin-top: 0px !important;
+        font-size: 0.4rem;
+        font-family: "Lato-Bold" !important;
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+      }
+      p {
+        @include c-align();
+        font-size: 0.4rem;
+        font-family: "Lato-Bold";
+        margin-bottom: 5px;
+      }
+      .copyright {
+        text-transform: uppercase;
+      }
+    }
+    .product-signature {
+      position: relative !important;
+      top: 20px;
+      width: 100%;
+      right: 0px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  .sidecontent {
+    .table-content {
+      .grid-header {
+        width: 100%;
+        .grid-heading {
+          width: 70%;
+        }
+        .grid-icon {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .wrapper {
+    header {
+      padding: 0.8em 0.4em;
+      nav {
+        display: none !important;
+      }
+      .menu {
+        display: none;
+      }
+      .mobile-menu {
+        display: flex;
+        font-size: 22px;
+        text-align: right;
+        cursor: pointer;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        @include zero-padding();
+        li.user-profile {
+          width: 50px;
+          height: 50px;
+          background: darken($primary-color, 8%);
+          border-radius: 50%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          .dropdown-toggle {
+            background-color: transparent;
+            border: none;
+            &:after {
+              content: "";
+              border: none;
+            }
+            i {
+              margin: 0px 5px;
+            }
+          }
+        }
+        .dropdown-item {
+          i {
+            color: #282828;
+          }
+        }
+        i {
+          color: $secondary-color;
+          margin: 0px 10px;
+        }
+      }
+    }
+    .content {
+      .sidemenu {
+        z-index: 2;
+        height: 100%;
+        transition: none;
+        right: 0;
+        display: none;
+      }
+    }
+    .search-panel {
+      padding: 0px;
+      display: flex;
+      margin: 0px;
+      flex-direction: column-reverse;
+      margin: 10px 0px;
+      .search-tags {
+        margin: 10px 0px;
+        @include zero-padding();
+      }
+    }
+    .client-branding-mobile {
+      display: none;
+      margin-bottom: 25px;
+      @include c-align();
+      img {
+        width: 80%;
+      }
+    }
+    .login-section {
+      width: 90%;
+      .login-box {
+        padding: 1rem;
+        .form-section {
+          .login-fields {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .product-signature-mobile {
+      display: none;
+      margin: 10px 0px;
+      padding: 10px 0px !important;
+      @include c-align();
+      img {
+        width: 50%;
+      }
+      h5 {
+        font-family: "Lato-Bold" !important;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin: 10px 0px !important;
+      }
+      h6 {
+        margin-top: 0px !important;
+        font-size: 0.4rem;
+        font-family: "Lato-Bold" !important;
+        margin-bottom: 10px !important;
+        margin-top: 10px !important;
+      }
+      p {
+        @include c-align();
+        font-size: 0.4rem;
+        font-family: "Lato-Bold";
+        margin-bottom: 5px;
+      }
+      .copyright {
+        text-transform: uppercase;
+      }
+    }
+    .product-signature {
+      position: relative !important;
+      top: 20px;
+      width: 100%;
+      right: 0px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

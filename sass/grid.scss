@@ -1,0 +1,375 @@
+.table-content {
+  @include zero-margin();
+  background-color: #fff;
+  /* padding: 10px !important; */
+  box-shadow: 0px 0px 3px #000;
+  position: relative;
+  margin-bottom: 20px !important;
+  .grid-header {
+    background-color: $primary-color;
+    padding: 10px;
+
+    h3 {
+      color: $secondary-color;
+      margin-bottom: 0px !important;
+      font-size: 1rem;
+      font-family: "Lato-Regular" !important;
+      line-height: 1.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.06rem;
+      span {
+        margin-left: 5px;
+        font-family: "Lato-Bold";
+        a {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  .grid-icon {
+    @include r-align();
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    i {
+      color: $secondary-color;
+      font-size: 16px;
+      vertical-align: middle;
+    }
+    span {
+      color: $secondary-color;
+      font-size: 12px;
+      font-family: "Lato-Regular";
+      margin-left: 5px;
+    }
+    ul {
+      margin-bottom: 3px;
+      li {
+        list-style: none;
+        display: inline-block;
+        &:last-child {
+          &::after {
+            content: "" !important;
+            padding: 0px 0px;
+          }
+        }
+        &:after {
+          content: "|";
+          padding: 0px 10px;
+          color: $secondary-color;
+        }
+        a {
+          align-items: center;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .table {
+    width: 100%;
+    @include zero-margin();
+    @include zero-padding();
+    margin-bottom: 20px !important;
+    padding: 10px !important;
+    cursor: pointer;
+    thead {
+      tr {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+    tr {
+      &:hover {
+        background-color: #e4e4e4;
+      }
+      td {
+        padding: 0.5rem;
+        color: #282828;
+        font-family: "Lato-Regular";
+        font-size: 12px;
+        border-bottom: 1px solid darken($background-color, 10%);
+        text-shadow: 0px 0px #282828;
+        border-bottom: 1px solid gainsboro;
+        border-top: none;
+        vertical-align: top;
+        .action-icons {
+          display: flex;
+          justify-content: flex-start;
+          i {
+            color: $primary-color;
+            font-size: 18px;
+            margin: 0 !important;
+            margin-right: 5px !important;
+          }
+        }
+        i {
+          color: $primary-color;
+          font-size: 18px;
+          margin: 0 !important;
+          margin-right: 5px !important;
+        }
+        p {
+          margin-bottom: 0px;
+          a {
+            text-align: left;
+            display: block;
+          }
+        }
+        .active {
+          background-color: $primary-color;
+          color: $secondary-color;
+          width: max-content;
+          padding: 5px;
+          min-width: 80px;
+          max-width: 80px;
+          text-align: center;
+        }
+        .inactive {
+          background-color: #9e9e9e;
+          color: $secondary-color;
+          width: max-content;
+          padding: 5px;
+          min-width: 80px;
+          max-width: 80px;
+          text-align: center;
+        }
+        a {
+          /* width: max-content; */
+          /* padding: 5px; */
+          /* min-width: 80px; */
+          /* max-width: 80px; */
+          text-align: center;
+          display: inline-block;
+        }
+      }
+      th {
+        padding: 0.5rem;
+        color: #282828;
+        font-family: "Lato-Regular";
+        font-size: 0.8rem;
+        border-bottom: 1px solid darken($background-color, 10%);
+        text-shadow: 0px 0px #282828;
+        border-top: none;
+      }
+      .uploadedby {
+        @include r-align();
+        display: block;
+        margin-top: 10px;
+
+        .upload-icon {
+          margin-right: 3px;
+        }
+        .username {
+          font-family: "Lato-Bold" !important;
+        }
+      }
+      .custom-checkbox {
+        display: unset !important;
+        font-size: 0.9rem;
+        padding-left: 30px;
+
+        .checkmark {
+          height: 15px;
+          width: 15px;
+
+          border: 1px solid $primary-color;
+        }
+      }
+      .custom-checkbox input:checked ~ .checkmark {
+        background-color: $primary-color;
+      }
+      .custom-checkbox input:checked ~ .checkmark:before {
+        content: "";
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 8px;
+        background-color: #fff;
+        left: 7px;
+        top: 2px;
+        transform: rotate(45deg);
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+        content: "";
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 2px;
+        background-color: #fff;
+        left: 1px;
+        top: 7px;
+        transform: rotate(45deg);
+      }
+    }
+    tr.parent-row {
+      background-color: #f3f3f3;
+    }
+    tr.child-row {
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+    tr.selected {
+      background-color: #e4e4e4;
+    }
+    .table {
+      width: 95%;
+      margin: 0 auto !important;
+      margin-bottom: 0px !important;
+      margin-right: 0px !important;
+    }
+  }
+
+  table.dataTable thead .sorting:before,
+  table.dataTable thead .sorting:after,
+  table.dataTable thead .sorting_asc:before,
+  table.dataTable thead .sorting_asc:after,
+  table.dataTable thead .sorting_desc:before,
+  table.dataTable thead .sorting_desc:after,
+  table.dataTable thead .sorting_asc_disabled:before,
+  table.dataTable thead .sorting_asc_disabled:after,
+  table.dataTable thead .sorting_desc_disabled:before,
+  table.dataTable thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: 0.9em;
+    display: block;
+    opacity: 0.3;
+  }
+  table.dataTable thead .sorting_asc:before,
+  table.dataTable thead .sorting_desc:after {
+    opacity: 1;
+  }
+  table.dataTable thead .sorting:before,
+  table.dataTable thead .sorting_asc:before,
+  table.dataTable thead .sorting_desc:before,
+  table.dataTable thead .sorting_asc_disabled:before,
+  table.dataTable thead .sorting_desc_disabled:before {
+    right: 1.2em;
+  }
+  .pagination {
+    .paginate_button {
+      a {
+        span {
+          color: #282828;
+          font-weight: bold;
+        }
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+    }
+    .page-item {
+      .page-link {
+        z-index: 1;
+        color: $secondary-color;
+        background-color: transparent;
+        border-color: transparent;
+        padding: 0.4rem 0.9rem;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+    .page-item.active {
+      .page-link {
+        z-index: 1;
+        color: $secondary-color;
+        background-color: $primary-color;
+        border-color: $primary-color;
+        padding: 0.4rem 0.9rem;
+      }
+    }
+  }
+  .table-info {
+    background-color: transparent;
+    color: #777777;
+    font-size: 0.9rem;
+    font-family: "Lato-Bold";
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0px;
+    padding-top: 0px !important;
+    .rowcount {
+      background-color: transparent;
+      text-align: right;
+      margin: 0px !important;
+      select {
+        padding: 10px;
+        border: none;
+        color: #777777;
+        cursor: pointer;
+      }
+    }
+    .totalrecord {
+      margin: 0px !important;
+      span {
+        padding: 0px 5px;
+      }
+      .end-limit {
+        &:before {
+          content: "-";
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+      .total-limit {
+        &:before {
+          content: "of";
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+    }
+    .pagination {
+      text-align: right;
+      margin: 0px !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      cursor: pointer;
+      .page-number {
+        padding: 5px 10px;
+        font-family: "Lato-Bold";
+        &:hover {
+          background-color: lighten($primary-color, 15%);
+          color: $secondary-color;
+        }
+      }
+      i {
+        font-weight: bold;
+        &:hover {
+          color: darken(#777777, 50%);
+        }
+      }
+      .active {
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+}
+.timetable {
+  tr {
+    th {
+      text-align: center;
+    }
+    td {
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
+      border: 1px solid gainsboro;
+    }
+    td.lunch-break {
+      text-align: center;
+      font-family: "Lato-Bold";
+      font-size: 30px;
+    }
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}

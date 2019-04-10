@@ -1,0 +1,28 @@
+$primary-color: #22a0a0;
+$secondary-color: #fff;
+$background-color: #e9e9e9;
+$text-color: #282828;
+
+@mixin margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@mixin r-align {
+  text-align: right;
+}
+@mixin l-align {
+  text-align: left;
+}
+@mixin c-align {
+  text-align: center;
+}
+@mixin zero-padding {
+  padding: 0% !important;
+}
+@mixin zero-margin {
+  margin: 0% !important;
+}
+@mixin disabeld {
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+}

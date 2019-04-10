@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <script src="jquery/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+  
+
+    <link
+      rel="stylesheet"
+      href="/bootstrap/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/bootstrap/css/bootstrap-grid.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/weave.css" />
+    <title>Cameras </title>
+  </head>
+
+  <body>
+      
+    <div class="wrapper container-fluid">
+       
+      <header class="grid">
+        <div class="col-md-2 branding">
+          <img src="images/logo.png" alt="OWLR" />
+        </div>
+        <div class="col-md-1 menu">
+         
+        </div>
+        <div class="col-md-1 mobile-menu">
+      
+            <span class="user-menu"> </span>
+            <li class="user-profile"> 
+                <div class="dropdown">
+                    <button
+                      class="dropdown-toggle user-branding"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                    <span class="user-img">JD</span>
+                    </button>
+      
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item" type="button">
+                          <i class="weave-user"></i> View Profile
+                        </button>
+                        <button class="dropdown-item" type="button">
+                            <i class="weave-chat"></i> Chat
+                          </button>
+                        <button class="dropdown-item" type="button">
+                          <i class="weave-line-axis"></i> Dashboard
+                        </button>
+                        <button class="dropdown-item" type="button">
+                          <i class="weave-company"></i>Company Name
+                        </button>
+                        <button class="dropdown-item" type="button">
+                          <i class="weave-multiuser"></i> Loggedin As:
+                        </button>
+                        <button class="dropdown-item" type="button">
+                          <i class="weave-setting"></i> Settings
+                        </button>
+                        <button class="dropdown-item" type="button">
+                          <i class="weave-support"></i> Support
+                        </button>
+                        <button class="dropdown-item" type="button">
+                            <i class="weave-sign-out"></i> Logout
+                          </button>
+                    
+                      </div>
+                  </div>
+            
+            </li>
+           
+          
+        </div>
+        <nav class="col-md-9">
+            
+          <li><i class="weave-star"></i></li>
+          <li><i class="weave-chat"></i><span class="badge badge-light">4</span></li>
+          <li>
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle user-branding"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="user-img">JD</span>
+                <span class="username">John Doe</span>
+              </button>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <button class="dropdown-item" type="button">
+                    <i class="weave-user"></i> View Profile
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    <i class="weave-line-axis"></i> Dashboard
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    <i class="weave-company"></i>Company Name
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    <i class="weave-multiuser"></i> User Roles
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    <i class="weave-setting"></i> Settings
+                  </button>
+                  <button class="dropdown-item" type="button">
+                    <i class="weave-support"></i> Support
+                  </button>
+                </div>
+            </div>
+          </li>
+          <li><i class="weave-notification"></i><span class="badge badge-light">4</span></li>
+          <li><i class="weave-sign-out"></i></li>
+        </nav>
+      </header>
+      <div class="content">
+     
+        <div class="sidecontent">
+           <div class="topbar row">
+            <nav aria-label="breadcrumb" class="col-md-3">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Camera Locations
+                </li>
+              </ol>
+            </nav>
+            <div class="search-panel col-md-9">
+              <div class="search-tags col-md-7 r-align">
+                <ul>
+                  <li>City: <span>e</span><span class="cancel">x</span></li>
+                  <li>Cameras Installed: <span>2</span><span class="cancel">x</span></li>
+                </ul>
+              </div>
+              <div class="search-field col-md-5">
+                <span class="search-icon"><i class="weave-search"></i></span>
+                <input
+                  type="text"
+                  class="form-control search-control"
+                  placeholder="Search"
+                  id="search-field"
+                />
+                <div class="search-fields col-md-12">
+                  <div class="row">
+                    <div class="col-md-12 fields">
+                      <label>Country:</label>
+                     <select name="" class="form-control" id="">
+                        <option value="">Select Country</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12 fields">
+                      <label>City:</label>
+                      <select name="" class="form-control" id="">
+                        <option value="">Select Country</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12 fields">
+                      <label>Last Maintenance Date:</label>
+                     <input type="date" class="form-control">
+                    </div>
+                    <div class="col-md-12 fields">
+                      <label>Cameras Installed:</label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="col-md-12 fields text-center">
+                      <button type="button" class="btn btn-main">Apply</button>
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        id="search-cancel"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="table-content col-md-12">
+              <div class="grid-header col-md-12">
+                <div class="row">
+                  <div class="col-md-8 grid-heading">
+                    <h3>Camera Locations</h3>
+                  </div>
+                  <div class="col-md-4 grid-icon">
+                    <ul>
+                      <li>
+                       
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <table class="table" id="grid">
+                <thead>
+               
+                  <th>Country</th>
+                  <th>City</th>
+                
+                  <th>Last Maintenance Date</th>
+                  <th>Total Cameras Installed</th>
+                   <th>Action</th>
+                </thead>
+                <tbody>
+            
+                 
+                      <% data.forEach(function(item) { %>
+                       <tr>
+                    
+                        <td> <%=item.country %></td>
+                        <td><%=item.cityName %></td>
+                        <td><%= item.maintenance[0].start%></td>
+                        <td><%=item.cameras.length %></td>
+                        <td> <span class="action-icons"
+                      ><a href="/locationdetail/<%=item.cityId %>">
+                        <i class="weave-view" title="View"></i>
+                      </a>
+                   
+                    </span></td>
+                         </tr>
+                    <% }); %>
+
+                
+                 
+               
+                </tbody>
+              </table>
+             
+            </div>
+        </div>
+             
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+      $(document).ready(function() {
+    
+        $("#search-field").on("focus", function() {
+          $(".search-fields").show();
+        });
+        $("#search-cancel").on("focus", function() {
+          $(".search-fields").hide();
+        });
+      });
+    </script>
+</html>

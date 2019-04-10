@@ -1,0 +1,138 @@
+.gadget-box {
+  padding: 15px 15px 15px 15px;
+  box-shadow: 1px 1px 2px #ccc;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  .gadget-header {
+    background-color: $primary-color;
+    h4 {
+      color: $secondary-color;
+      font-size: 1rem;
+      font-family: "Lato-Regular" !important;
+      padding: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06rem;
+    }
+    p {
+      font-size: 1rem;
+      font-family: "Lato-Light" !important;
+    }
+  }
+  .gadget-body {
+    background-color: $secondary-color;
+    padding: 15px;
+    h4 {
+      color: $text-color;
+      font-size: 1.2rem;
+      font-family: "Lato-Regular" !important;
+    }
+    p {
+      font-size: 1rem;
+      font-family: "Lato-Light" !important;
+      margin-bottom: 5px;
+    }
+    h5 {
+      color: $text-color;
+      font-size: 1rem;
+      font-family: "Lato-Regular" !important;
+      margin-bottom: 5px !important;
+    }
+    h6 {
+      font-size: 0.7rem;
+      font-family: "Lato-Light" !important;
+      margin-bottom: 5px;
+    }
+    .program-progress {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .data {
+      align-items: center;
+      padding-top: 5px !important;
+      i {
+        font-size: 22px;
+      }
+    }
+    .dates {
+      font-family: "Lato-Light" !important;
+    }
+    .course-content {
+      li {
+        display: inline-flex;
+        padding: 15px 8px 15px 8px;
+        list-style: none;
+        border: 1px solid #ccc;
+        text-align: center;
+        min-height: 80px;
+        min-width: 100px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 2px;
+        margin-left: 2px;
+        position: relative;
+        cursor: pointer;
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+    }
+    .camera-list {
+      .items {
+        margin-bottom: 10px;
+        li {
+          display: inline-flex;
+          padding: 15px 8px 15px 8px;
+          list-style: none;
+          border: 1px solid #ccc;
+          text-align: center;
+          min-height: 150px;
+          min-width: 120px;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          margin-right: 2px;
+          margin-left: 2px;
+          position: relative;
+          cursor: pointer;
+          .custom-checkbox {
+            position: absolute;
+            top: 20px;
+            left: -5px;
+          }
+          &:hover {
+            background: lighten($primary-color, 15%);
+            h5 {
+              color: $secondary-color;
+            }
+            p {
+              color: $secondary-color;
+            }
+            h6 {
+              color: $secondary-color;
+            }
+          }
+          p {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            i {
+              margin: 5px;
+            }
+          }
+        }
+        li.selected {
+          background: $primary-color;
+          h5 {
+            color: $secondary-color;
+          }
+          p {
+            color: $secondary-color;
+          }
+          h6 {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
